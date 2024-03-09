@@ -13,10 +13,6 @@ conda install pytorch==2.0.0 torchvision==0.15.0 torchaudio==2.0.0 pytorch-cuda=
 # https://docs.ultralytics.com/quickstart/
 pip install ultralytics
 
-# Clone the repository
-git clone https://github.com/oracl4/RoadDamageDetection.git
-cd RoadDamageDetection
-
 # Install requirements
 pip install -r requirements.txt
 
