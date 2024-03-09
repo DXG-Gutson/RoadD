@@ -7,24 +7,18 @@ import cv2
 import numpy as np
 import streamlit as st
 
-# Deep learning framework
 from ultralytics import YOLO
 from PIL import Image
 from io import BytesIO
 
-from sample_utils.download import download_file
-import logging
 import queue
 from pathlib import Path
 from typing import List, NamedTuple
 
 import av
-import cv2
 import numpy as np
-import streamlit as st
 from streamlit_webrtc import WebRtcMode, webrtc_streamer
 
-# Deep learning framework
 from ultralytics import YOLO
 
 from sample_utils.download import download_file
@@ -43,7 +37,7 @@ ROOT = HERE.parent
 
 logger = logging.getLogger(__name__)
 
-MODEL_URL = "https://github.com/oracl4/RoadDamageDetection/raw/main/models/YOLOv8_Small_RDD.pt"  # noqa: E501
+MODEL_URL = "https://github.com/oracl4/RoadDamageDetection/raw/main/models/YOLOv8_Small_RDD.pt"  
 MODEL_LOCAL_PATH = ROOT / "./models/YOLOv8_Small_RDD.pt"
 download_file(MODEL_URL, MODEL_LOCAL_PATH, expected_size=89569358)
 
@@ -51,7 +45,6 @@ download_file(MODEL_URL, MODEL_LOCAL_PATH, expected_size=89569358)
 STUN_STRING = "stun:" + str(getSTUNServer())
 STUN_SERVER = [{"urls": [STUN_STRING]}]
 
-# Session-specific caching
 # Load the model
 cache_key = "yolov8smallrdd"
 if cache_key in st.session_state:
@@ -77,10 +70,6 @@ st.title("Road Damage Detection - Realtime")
 
 st.write("Detect the road damage in realtime using USB Webcam. This can be useful for on-site monitoring with personel on the ground. Select the video input device and start the inference.")
 
-# NOTE: The callback will be called in another thread,
-#       so use a queue here for thread-safety to pass the data
-#       from inside to outside the callback.
-# TODO: A general-purpose shared state object may be more useful.
 result_queue: "queue.Queue[List[Detection]]" = queue.Queue()
 
 def video_frame_callback(frame: av.VideoFrame) -> av.VideoFrame:
@@ -152,7 +141,6 @@ MODEL_URL = "https://github.com/oracl4/RoadDamageDetection/raw/main/models/YOLOv
 MODEL_LOCAL_PATH = ROOT / "./models/YOLOv8_Small_RDD.pt"
 download_file(MODEL_URL, MODEL_LOCAL_PATH, expected_size=89569358)
 
-# Session-specific caching
 # Load the model
 cache_key = "yolov8smallrdd"
 if cache_key in st.session_state:
