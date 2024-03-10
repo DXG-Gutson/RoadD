@@ -3,11 +3,11 @@
 This project is road damage detection applications that designed to enhance road safety and infrastructure maintenance by swiftly identifying and categorizing various forms of road damage, such as potholes and cracks.
 
 ## Performing Detection Using Image
-![image](https://github.com/DXG-Gutson/RoadD/assets/161324365/9122171a-03b1-43c0-b938-4e473bb7f26c)
+
 
 
 ## Performing Detection Using Video
-![image](https://github.com/DXG-Gutson/RoadD/assets/161324365/d48e607b-b8bb-490f-b0cb-ed25f4552386)
+
 
 
 The project is powered by YOLOv8 deep learning model that trained on Crowdsensing-based Road Damage Detection Challenge 2022 dataset.
