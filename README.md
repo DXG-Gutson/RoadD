@@ -1,4 +1,4 @@
-![PR_curve (1)](https://github.com/DXG-Gutson/RoadD/assets/161324365/9c875d7a-ff3c-43d8-8dfa-19aa8c36476c)# Road Damage Detection Applications
+ Road Damage Detection Applications
 
 This project is road damage detection applications that designed to enhance road safety and infrastructure maintenance by swiftly identifying and categorizing various forms of road damage, such as potholes and cracks.
 
