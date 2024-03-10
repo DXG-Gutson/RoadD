@@ -73,9 +73,12 @@ Run the training on **1_TrainingYOLOv8.ipynb** notebook. You can change the hype
 This is the training result of the YOLOv8s model that trained on the filtered Japan and India dataset with RTX2060 GPU. You can perform the evaluation on your dataset with **2_EvaluationTesting.ipynb** notebook, just convert your dataset into ultralytics format.
 
 <p align="center">
-    <img src='resource/PR_curve.png' width='80%'>
-    <img src='resource/confusion_matrix.png' width='80%'>
-    <img src='resource/val_batch2_pred.jpg' width='100%'>
+![image](https://github.com/DXG-Gutson/RoadD/assets/161324365/d018dfb4-ba42-4f31-b33f-5b2356bc61e9)
+
+![image](https://github.com/DXG-Gutson/RoadD/assets/161324365/dbed4654-64fd-4b93-bbbc-5b161bbed368)
+
+![image](https://github.com/DXG-Gutson/RoadD/assets/161324365/c3541727-bb2d-4d5f-86f1-4f8495bacb5e)
+
 </p>
 
 ## License and Citations
